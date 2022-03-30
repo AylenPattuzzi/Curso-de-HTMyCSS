@@ -1,0 +1,168 @@
+/*Selectores de tipo*/
+h2{
+  color:rgb(106, 33, 190);
+  /*tamaño de la fuente*/
+  font-size: 30px;
+  /*familia de tipografias*/
+  font-family: 'Hurricane', cursive;
+}
+
+/*varuables en css*/
+/*cuando le ponemos -- antes del nombre de la variable, estamos creando una variable*/
+.pinguino{
+  --pinguino-barriga: green;
+  /*para utilizar las varianles ponemos var(--nombreDeLaVariable)*/
+}
+
+/*rgba para poner trasparencia a los colores rgb*/
+h2{
+  color:rgba(29, 129, 96, 0.3)
+}
+/*codigo hexadecimal en css*/
+div{
+  background-color: #005577;
+  /*color hexadecimal abreviado*/
+  background-color: #057;
+}
+
+
+/*priorizar estilos en css*/
+.texto-azu{
+  color: blue;
+}
+/*la ultima clase definida es la que tiene prioridad*/
+.texto-morado{
+  color:mediumorchid;
+}
+/*las clases tienen prioridad con respecto a los selectores de tipo*/
+/*el id tiene prioridad con respecto a las clases*/
+/*el estilo en linea tiene prioridad con respecto a las clases y al id*/
+/*podemos usar !important para indicarle al navegador que la clase o el id tienen prioridad pobre todas las cosas definidas*/
+.texto-azul{
+  color: blue !important;
+}
+/*---------------*/
+body{
+  background-color: antiquewhite;
+  color: brown;
+}
+
+/*Valores y unidades css*/
+#contenedor-principal{
+  color: white;
+  padding: 5px;
+  font-size:10px;
+  background-color: yellow;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.rectangulo{
+  padding: 5px;
+  margin: 5px;
+
+}
+.px{
+  background-color: blueviolet;
+  width: 200px;
+
+}
+/*20% del ancho de la ventana del navegador*/
+.vw{
+  background-color: darkblue;
+  width: 20vw;
+}
+/*esta unidad es relativa al tamaño del texto, al tamaño de la fuente de ese elemento del contenedor*/
+.em{
+  background-color: aquamarine;
+  width:15em;
+  font-size: 1.5em;
+}
+
+/*Selectores de atributos*/
+img[alt]{
+  border-radius: 50%;
+}
+
+[type="radio"] {
+  margin:5px;
+}
+
+[type="checkbox"] {
+  margin:5px;
+}
+
+a[href="https://es.wikipedia.org/wiki/Felis_silvestris_catus"]{
+  color: green;
+  text-decoration: none;
+  font-weight: bold;
+   
+}
+/*--------------------------------*/
+.contenedor-listas{
+  background-color: silver;
+}
+/*asignar un estilo con un id*/
+#imagenes-de-gatos{
+  font-size: 20px;
+  color: green;
+  font-family: 'Roboto', sans-serif ;
+}
+/*div{
+  border-width: 4px;
+  border-color: black;
+  border-style: solid;
+
+}*/
+
+
+.contenedor-listas{
+
+}
+.imagen-de-gato {
+  width: 400px;
+  border-width: 5px;
+  border-color: black;
+  border-style: solid double;
+}
+.bordes-redondeados{
+  border-radius:50%;
+}
+
+/*el padding es la distancia que tenemos entre el contenido de su elemento y su borde*/
+img {
+  margin: 10px 200px;
+  padding: 20px 15px;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+
+}
+
+p,
+ul,
+ol{
+  font-size: 20px;
+   /*google fonts*/
+  font-family: 'Roboto', sans-serif;
+}
+ 
+h3{
+  color:rgb(12, 200, 138);
+  font-size: 25px;
+ 
+}
+
+p{
+  color:rgb(49, 49, 49);
+}
+
+/*Selector universal*/
+/**{
+  color:black;
+}*/
+/*Selector de clase*/
+.lista-de-gatos {
+  color: chocolate;
+}
+
+
