@@ -1,0 +1,67 @@
+/*Selectores de tipo*/
+h2{
+  color:rgb(106, 33, 190);
+  /*tamaño de la fuente*/
+  font-size: 30px;
+  /*familia de tipografias*/
+  font-family: 'Hurricane', cursive;
+
+}
+.contenedor-listas{
+  background-color: silver;
+}
+/*asignar un estilo con un id*/
+#imagenes-de-gatos{
+  font-size: 20px;
+  color: green;
+  font-family: 'Roboto', sans-serif ;
+}
+div{
+  background-color: rgb(198, 170, 224);
+}
+
+.contenedor-listas{
+
+}
+.imagen-de-gato {
+  width: 400px;
+  border-width: 5px;
+  border-color: black;
+  border-style: solid double;
+}
+.bordes-redondeados{
+  border-radius:50%;
+}
+
+img {
+  width: 200px;
+}
+
+p,
+ul,
+ol{
+  font-size: 20px;
+   /*google fonts*/
+  font-family: 'Roboto', sans-serif;
+}
+ 
+h3{
+  color:rgb(12, 200, 138);
+  font-size: 25px;
+ 
+}
+
+p{
+  color:rgb(49, 49, 49);
+}
+
+/*Selector universal*/
+*{
+  color:black;
+}
+/*Selector de clase*/
+.lista-de-gatos {
+  color: chocolate;
+}
+
+

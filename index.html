@@ -4,15 +4,34 @@
 <!--Elementos que no veo pero que necesitamos para que la pagina funcione correctamente-->
 <head>
   <title>AppDeGatos</title>
+  <!--para acceder a archivos css-->
+  <link rel="stylesheet" href="style.css">
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Lato:ital,wght@0,700;0,900;1,400&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <style>
+    h2{
+      color:rgb(106, 33, 190);
+    }
+
+    h3{
+      color:rgb(12, 200, 138);
+    }
+
+    p{
+      color:rgb(49, 49, 49)
+    }
+  </style>
 </head>
 <!--es donde vamos a definir la esctructura de la pagina.-->
 
 <body>
   <!--Como crear un encabezado o heading -->
-  <h2>AppDeGatos</h2>
+  <h2 style="color: rgb(106, 18, 165)">AppDeGatos</h2>
   <!-- todo el contenido principal de la pagina va a estar dentro de la etiqueta main -->
   <main>
-    <h3>Imagenes de gatos:</h3>
+    <h3 id="imagenes-de-gatos">Imagenes de gatos:</h3>
     <!--Para crear un parrafo -->
     <!-- podemos crear un enlace con <a></a>, href="" se indica la direccdion del enlace-->
     <p>Haz click aquí para ver mas <a href="https://es.wikipedia.org/wiki/Felis_silvestris_catus" target="_blank"
@@ -26,8 +45,8 @@
       <br>
       <!--Para que una imagen sea un enlace debemos rodear el <img> con <a> y definir el href=""-->
       <!--Si queremos un enlace sin destistino simplemente le ponemos # al href-->
-      <a href=" http://www.freecodecamp.org/espanol/" target="_blank" rel="noopener noreferrer"><img
-        src="http://bit.ly/fcc-relaxing-cat" alt="Un lindo gato naranja recostado sobre su espalda."></a>
+      <a href=" http://www.freecodecamp.org/espanol/" target="_blank"  rel="noopener noreferrer"><img
+        src="http://bit.ly/fcc-relaxing-cat" class="bordes-redondeados" alt="Un lindo gato naranja recostado sobre su espalda."></a>
     <!--alt + z para adaptar el parrafo al tamaño de la ventana -->
 
 
@@ -50,9 +69,9 @@
     <!--Listas no ordenadas, la clave es usar el elemento <ul>-->
     <h3>Lista de gatos</h3>
     <!--contenedor <div>, se le aplica css-->
-    <div>
+    <div class="contenedor-listas">
       <p>Cosas que los gatos <strong>aman</strong>:</p>
-      <ul>
+      <ul class="lista-de-gatos">
         <!--Para especificar cada elemento de la lista utilizamos <li>-->
         <li>Menta gatuna</li>
         <li>Apuntadores láser</li>
@@ -61,7 +80,7 @@
       <!--Listas ordenadas, se utiliza <ol>-->
       <!--Para que parte del texto se vea en negrita podemos usar la etiqueta <strong>-->
       <p>Cosas que los gatos <strong>odian</strong>:</p>
-      <ol>
+      <ol class="lista-de-gatos">
         <!--Para hacer que parte del texto se muestre en letra cursiva tenemos que usar la etiqueta <em>-->
         <li>Tratamiento <em>antipulgas</em></li>
         <!--Para hacer que parte del texto se muestre tachado usamos la etiqueta <s>-->
@@ -70,7 +89,7 @@
       </ol>
     </div>
 
-    <img src="imagenes/gato.png" alt="Gato gris con ojos claros">
+    <img src="imagenes/gato.png" class="imagen-de-gato" alt="Gato gris con ojos claros">
 
     <!--Crear un formulario, utilizamos la etiqueta <form>-->
     <!--el atributo action="" representa la direccion en el servidor del programa que va a manejar esos datos, en este caso seria el achivo enviar-respuesta-->
