@@ -7,6 +7,8 @@ h2{
   font-family: 'Hurricane', cursive;
 
 }
+
+
 .contenedor-listas{
   background-color: silver;
 }
@@ -17,7 +19,10 @@ h2{
   font-family: 'Roboto', sans-serif ;
 }
 div{
-  background-color: rgb(198, 170, 224);
+  border-width: 4px;
+  border-color: black;
+  border-style: solid;
+
 }
 
 .contenedor-listas{
@@ -33,8 +38,14 @@ div{
   border-radius:50%;
 }
 
+/*el padding es la distancia que tenemos entre el contenido de su elemento y su borde*/
 img {
-  width: 200px;
+  margin: 10px 200px;
+  padding: 20px 15px;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+
 }
 
 p,
